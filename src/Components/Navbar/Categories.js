@@ -1,0 +1,26 @@
+export const categories = [
+    {name: 'All Categories'}, 
+    {name: 'Antiques'},
+    {name: 'Art'},
+    {name: 'Baby'},
+    {name: 'Books'},
+    {name: 'Business & Industrial'},
+    {name: 'Cell Phones & Accessories'},
+    {name: 'Clothing, Shoes & Accessories'},
+    {name: 'Coins & Paper Money'},
+    {name: 'Collectibles'},
+    {name: 'Computers/Tablets & Networking'},
+    {name: 'Consumer Electronics'},
+    {name: 'Crafts'},
+    {name: 'Dolls & Bears'},
+    {name: 'DVDs & Movies'},
+    {name: 'u4buy Motors'},
+    {name: 'Health & Beauty'},
+    {name: 'Gift Cards & Coupons'},
+    {name: 'Home & Garden'},
+    {name: 'Jewelry & Watches'},
+    {name: 'Toys & Hobbies'},
+    {name: 'Travel'},
+    {name: 'Video Games & Console'}
+    
+]
