@@ -31,7 +31,7 @@ const ButtonUp = () => {
     </div>
     <div className='hidden lg:block'>
         {toTop && (
-            <BsFillCaretUpFill size={40} style={{color: 'black'}} onClick={scrollUp}/>
+            <BsFillCaretUpFill size={40} style={{color: 'blue', cursor: 'pointer'}} onClick={scrollUp}/>
 
         )}
     </div>

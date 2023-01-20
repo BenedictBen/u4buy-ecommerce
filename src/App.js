@@ -15,8 +15,8 @@ import FooterMain from "./Components/Footer/FooterMain";
 import Handbag from "./Components/SingleProduct/Handbag";
 import IPhone from "./Components/SingleProduct/IPhone";
 import Earbuds from "./Components/SingleProduct/Earbuds";
-import Cart from "./Components/Cart/Cart";
-import ShopContextProvider from "./Components/Context/ShopContext";
+import NewCart from "./Components/Cart/NewCart";
+// import ShopContextProvider from "./Components/Context/ShopContext";
 
 import SmartWatch from "./Components/SingleProduct/SmartWatch";
 import CanonCamera from "./Components/SingleProduct/CanonCamera";
@@ -25,11 +25,16 @@ import CheckOut from "./Pages/CheckOut";
 import ThankYou from "./Components/Checkout/ThankYou";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Payment from "./Components/Checkout/Payment";
+import Card from "./Components/Cart/Card";
+import Cart from "./Components/Cart/Cart";
+import Foods from "./Pages/Foods";
+
 
 function App() {
   return (
     <div className="App">
-      <ShopContextProvider> 
+     
         
       <NavPage />
       <Routes>
@@ -50,19 +55,20 @@ function App() {
         <Route path="/smartwatch" element={<SmartWatch />}/>
         <Route path="/canoncamera" element={<CanonCamera />}/>
         <Route path="/cartires" element={<CarTires />}/>
-
         <Route path="/cart" element={<Cart />}/>
         <Route path="/checkout" element={<CheckOut />}/>
         <Route path="/thankyou" element={<ThankYou />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
+        <Route path="/foods" element={<Foods />}/>
+
 
         
 
       </Routes>
       <FooterMain />
       
-      </ShopContextProvider>
+    
     </div>
   );
 }

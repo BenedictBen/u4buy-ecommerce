@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { BsFillBellFill, BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Card from '../Cart/Card';
 
 const NavbarLargeFirst = () => {
+    const [active, setActive ] = useState(false)
+    const showMenu = () => {
+        setActive(!active)
+    }
   return (
     <>
     
@@ -47,11 +52,15 @@ const NavbarLargeFirst = () => {
             <div>
                 <BsFillBellFill size={20}/>
             </div>
-            <div>
-                <Link to="/cart">
-                    <BsCart2 size={25}/>
+
+            <Card onClick={showMenu}/>
+
+            {/* <div>
+                <Link to="/newcart" className='flex items-center justify-center flex-row'>
+                    <BsCart2 size={20}/>
+                    <span className='span-cart absolute top-0 right-3'>0</span>
                 </Link>
-            </div>
+            </div> */}
             
         </div>
     </div>

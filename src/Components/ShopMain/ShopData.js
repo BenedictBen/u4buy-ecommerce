@@ -11,7 +11,7 @@ import Headband from "../../Assets/Store/headband1.jpg";
 import iPhone from "../../Assets/Store/iPhone1.jpg";
 import Jean from "../../Assets/Store/jeans1.jpg";
 import Jersey from "../../Assets/Store/jersey1.png";
-import Laptop from "../../Assets/Store/laptop1.jpg";
+import pants from "../../Assets/Fashion/pants1.jpg";
 import Longsleeve from "../../Assets/Store/longSleeve1.jpg";
 import Mattress from "../../Assets/Store/mattress1.jpg";
 import NeckLift from "../../Assets/Store/NeckLift3.jpg";
@@ -73,7 +73,7 @@ export const allshop = [
 name: "2022 SCOTT Addict  Road Bike ",
     image:  Bicycle,
     category: "new",
-     price: "3,299.99"
+     price: "3299.99"
 },{id:8,
 name: "Cutie Pie T-Shirt Women's Sexy Novelty",
     image:  Shirtladies,
@@ -83,8 +83,7 @@ name: "Cutie Pie T-Shirt Women's Sexy Novelty",
 name: "Nike SB Dunk Low PRM QS Travis Scott",
     image:  Nike,
     category: "new",
-     price: "1,395.00"
-},
+     price: "1355"},
 {id:10,
 name: "Men's Under Armour Sleeve Shirt",
 image: Longsleeve,
@@ -174,7 +173,13 @@ name: "Ripple Vanilla Nutrition ",
 image: Ripple,
 category: "popular",
 price: "14.99"},
-
+    {
+    id:27,
+    name: "Gym Sports Running Pants",
+    price: "7.91",
+    image: pants,
+    category: "new"
+    }
 ]
 
 

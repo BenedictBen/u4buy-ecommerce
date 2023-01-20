@@ -48,13 +48,20 @@ const SelectionLarge = () => {
                 isActive ? activeLink: normalLink }>
             <h1 className='pr-3 hover:text-yellow-500'>Home & Garden</h1>
             </NavLink>    
+            <NavLink to="/foods" className={({ isActive }) => 
+                isActive ? activeLink: normalLink }>
+            <h1 className='pr-3 hover:text-yellow-500'>Foods</h1>
+            </NavLink> 
             <NavLink to="/category" className={({ isActive }) => 
                 isActive ? activeLink: normalLink }>
             <h1 className='pr-3 hover:text-yellow-500'>All</h1>
             </NavLink>     
-            <NavLink>
+            <NavLink to="/vendorhome" className={({ isActive }) => 
+                isActive ? activeLink: normalLink }>
+
               <h1 className='hover:text-yellow-500'>Sell</h1>
             </NavLink>
+            
         </div>
     </div>
   )

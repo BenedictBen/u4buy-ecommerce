@@ -1,23 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import { BiShoppingBag } from "react-icons/bi";
-import { allshop } from '../ShopMain/ShopData';
 import { useSelector, useDispatch } from 'react-redux';
 import { cartTotalSelector } from "../Redux/selectors";
 import { AiOutlineClose, AiOutlinePlus,AiOutlineMinus } from "react-icons/ai";
 import { toggle } from "../Redux/uiSlice";
-import { increament, decrement, clear } from "../Redux/cartSlice";
+import { increament, decrement, remove,clear } from "../Redux/cartSlice";
 import { cartTotalPriceSelector } from "../Redux/selectors";
 import { Link } from 'react-router-dom';
 
-const Cart = () => {
-      const [change, setChange] = useState(false);
 
+
+
+const Card = () => {
+    const [cardOpen, setCardOpen] = useState(false)
+      const [change, setChange] = useState(false);
     
+   
+const HandleDeleteCart = (id) => {
+  dispatch(remove(id))
+}
+    
+
+    const closeCard = () => {
+        setCardOpen(null)
+    }
 
    const total = useSelector(cartTotalSelector);
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
-  const ui = useSelector((state) => state.ui);
+  
   const totalPrice = useSelector(cartTotalPriceSelector);
 
   useEffect(() => {
@@ -32,11 +43,32 @@ const Cart = () => {
 
   return (
     <>
-    {cart.map((cartitem) => (
+        <div className='card flex items-center justify-center flex-row cursor-pointer ' onClick={() => setCardOpen(!cardOpen)}>
+            <BiShoppingBag className='cardIcon'size={20}/>
+            <span className='span-cart absolute top-0 right-[-15px]'>{total}</span>
+        </div>
+        <div className={cardOpen ? "overlay" : "nonoverlay"}></div>
+
+        <div className={cardOpen ? "cartItemz" : "cardhide"}>
+            <div className='flex justify-between items-center '>
+                <h1>Shopping Cart</h1>
+                <button onClick={closeCard}>
+                    <AiOutlineClose />
+                </button>
+            </div>
+            <div className='m-auto'>
+                <button onClick={() => {
+                    dispatch(clear());
+                  }} className='flex items-center justify-center bg-blue-500 m-auto w-full text-white'>Clear</button>
+            </div>
+
+
+            {cart.map((cartitem) => (
+              <div className=''>
                 <div className='cartContent'>
                <div className='img '>
                  <img src={cartitem.image} alt="img"/>
-                 <button className='remove flexCenter'>
+                 <button className='remove flexCenter' onClick={() => HandleDeleteCart(cartitem.id)}>
                      <AiOutlineClose className=' ' size={20}/>
                  </button>
                </div>
@@ -63,20 +95,20 @@ const Cart = () => {
                  <div className='priceTitle'></div>
                </div>
          </div>
+               </div>
             ))}
-            <div className='bg-black text-white w-64 md:w-72 rounded-lg mb-3' >
-                <button className='flex gap-3 px-2 py-1 divide-x '>
+            <div className='checkOut' >
+                <button onClick={closeCard}>
                     <Link to="/checkout">
                     <span>Proceed To Checkout</span>
                     </Link>
-                    <label className='pl-2'>${totalPrice} </label>
+                    <label>${totalPrice} </label>
                 </button>
             </div>
-        
-    
+        </div>
+
     </>
-   
   )
 }
 
-export default Cart
+export default Card

@@ -6,9 +6,16 @@ import NavbarLarge from './NavbarLarge';
 import Logo1 from '../../Assets/images/Logo1.png'
 import { NavLink } from "react-router-dom"
 import { Link } from "react-router-dom"
+import { cartTotalSelector } from "../Redux/selectors";
+import { useSelector } from 'react-redux';
+
+
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
+
+   const total = useSelector(cartTotalSelector);
+
 
     const showMenu = () => {
         setActive(!active)
@@ -35,9 +42,11 @@ const Navbar = () => {
                     <BsPerson size={28} style={{ color: 'white'}}/>
                 </div>
                 <div>
-                    <Link to="/cart">
+                    <Link to="/cart" className='flex items-center justify-center flex-row'>
                         <BsCart2 size={28} style={{ color: 'white'}}/>
+                        <span className='span-cart absolute top-5 right-12'>{total}</span>
                     </Link>
+                    
                 </div>
                 <div>
                     <AiOutlineMenu onClick={showMenu} size={28} style={{ color: 'white'}}/>

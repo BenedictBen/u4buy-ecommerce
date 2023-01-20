@@ -1,15 +1,14 @@
 import React, { useContext } from 'react';
 import { BsHeart } from "react-icons/bs";
-import { ShopContext } from '../Context/ShopContext';
+
 
 
 
 const AllProduct = (props) => {
     const {id, name, price, image, path} = props.data;
-    
-    const { addToCart, cartItems } = useContext(ShopContext);
 
-    const cartItemCount = cartItems[id]
+
+   
 
   return (
     <div className='hidden lg:block'>
@@ -30,7 +29,7 @@ const AllProduct = (props) => {
                         </div>
                         <div className=''>
                            <div className=''>
-                            <button className='uppercase bg-blue-500 px-3 py-2 rounded-lg text-white font-bold m-auto hover:bg-gray-500' onClick={() => addToCart(id)}>add to cart {cartItemCount > 0 && <> ({cartItemCount}) </>}</button>
+                            <button className='uppercase bg-blue-500 px-3 py-2 rounded-lg text-white font-bold m-auto hover:bg-gray-500'>add to cart</button>
                         </div>
                         </div>
                         </div>

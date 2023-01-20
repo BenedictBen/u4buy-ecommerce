@@ -46,7 +46,15 @@ import shirtladies from "../../Assets/Store/shirtladies1.jpg";
 import tolder from "../../Assets/Store/tolder1.jpg";
 import jean from "../../Assets/Store/jeans1.jpg";
 
-
+import ampesi from "../../Assets/Foods/ampesi.jpg";
+import rice from "../../Assets/Foods/rice-1.jpg";
+import jollof from "../../Assets/Foods/jollof.jpg";
+import waakye from "../../Assets/Foods/waakye.jpg";
+import friedrice from "../../Assets/Foods/friedriceChicken.jpg";
+import fufu from "../../Assets/Foods/fufu.jpeg";  
+import banku from "../../Assets/Foods/banku_okro.jpg";  
+import jj from "../../Assets/Foods/jj.jpg";  
+import koko from "../../Assets/Foods/hausa-koko.jpg";  
 
 
 import deodorant from '../../Assets/Health&Beauty/deodorant1.jpg'
@@ -164,449 +172,484 @@ export const largeCategory = [
 
 
 export const all = [
-        {id:1,
+        {
              name: "Decorative Glass Top Table",
     price: "100",
     image: toptable,
     category: "collectibles"
 },
- {id:2,
+ {
      name: "Viennese Art Nouveau armchair ",
     price: "20,000.00",
     image: armchair,
     category: "collectibles"
 },
- {id:3,
+ {
      name: "Spanish Wall Slat Room Divider",
     price: "109.99",
     image: divider,
     category: "collectibles"
 },
- {id:4,
+ {
      name: "AFRICAN IMPALA ANTELOPE Paint",
     price: "26.99",
     image: paint,
     category: "collectibles"
 },
- {id:5,
+ {
      name: "Handmade Fashion Girl Doll",
     price: "339.00",
     image: doll,
     category: "collectibles"
 },
-{id:6,
+{
      name: "Sony ZV-1 20.1MP K Digital Camera",
     price: "674.00",
     image: sony,
     category: "electronic"},
-    {id:7,
+    {
          name: "professional F3 Drones GPS 5G",
     price: "121.22",
     image: drone,
     category: "electronic"},
-    {id:8,
+    {
          name: "Hp 32f 31.5 IPS LED Monitor",
     price: "219.92",
     image: monitor,
     category: "electronic"},
-    {id:9,
+    {
          name: "Miroir M189 Portable Projector",
     price: "184.99",
     image: projector,
     category: "electronic"},
-    {id:10,
+    {
          name: "Wyze Cam v3 1080 Camera",
     price: "59.28",
     image: cam,
     category: "electronic"},
-    {id:11,
+    {
          name: "Amazon Encho 2nd generation",
     price: "20.73",
     image: amazon,
     category: "electronic"},
-    {id:12,
+    {
          name: "Nitendo Switch Lite",
     price: "299.88",
     image: nintendo,
     category: "electronic"},
-    {id:13,
+    {
          name: "Dell Optiplex 7020 S77 i-7-4790",
     price: "249.99",
     image: dell,
     category: "electronic"},
-    {id: 14,name: "Bose SoundLink Headphone",
+    { name: "Bose SoundLink Headphone",
     price: "225.00",
     image: bose,
     category: "electronic"},
 
-    {id: 15,name: "New Apple iPod Classic 7th Gen Black",
+    { name: "New Apple iPod Classic 7th Gen Black",
     price: "160.54",
     image: ipod,
     category: "electronic"},
-    {id: 16,name: "Apple MacBook Pro 13",
+    { name: "Apple MacBook Pro 13",
     price: "527.68",
     image: laptop,
     category: "electronic"},
-    {id: 17,name: "Samsung Galaxy S22 Ultra 5G SM-S908U1",
+    { name: "Samsung Galaxy S22 Ultra 5G SM-S908U1",
     price: "899.99",
     image: samsung,
     category: "electronic"},
-    {id: 18,name: "Apple iPhone 11 Pro Max 64/256/512GB",
+    { name: "Apple iPhone 11 Pro Max 64/256/512GB",
     price: "488.63",
     image: iPhone,
     category: "electronic"},
-    {id: 19,name: "Bluetooth Earbuds TWS 5.3",
+    { name: "Bluetooth Earbuds TWS 5.3",
     price: "12.99",
     image: earpod,
     category: "electronic"},
-    {id: 20,name: "M6 Smart Band Watch Bracelet",
+    { name: "M6 Smart Band Watch Bracelet",
     price: "9.99",
     image: watch,
     category: "electronic"},
-    {id: 21,name: "Canon EOS M50 Mark II Mirrorless",
+    { name: "Canon EOS M50 Mark II Mirrorless",
     price: "699.00",
     image: canon,
     category: "electronic"},
-    {id: 22,name: " Austrian Army Alpine Pullover sweater",
+    { name: " Austrian Army Alpine Pullover sweater",
     price: "71.85",
     image: sweater,
     category: "fashion"},
-    {id: 23,name: "Chelsea Ankle Boots Mens Shoes",
+    { name: "Chelsea Ankle Boots Mens Shoes",
     price: "42.46",
     image: boots,
     category: "fashion"},
-    {id: 24,name: "Gym Sports Running Pants",
+    { name: "Gym Sports Running Pants",
     price: "7.91",
     image: pants,
     category: "fashion"},
-    {id: 25,name: "Skechers Toddler Boy's Sandals",
+    { name: "Skechers Toddler Boy's Sandals",
     price: "24.99",
     image: skechers,
     category: "fashion"},
-    {id: 26,name: "Nike Girls Pink Running Shoes",
+    { name: "Nike Girls Pink Running Shoes",
     price: "29.99",
     image: girls_nike,
     category: "fashion"},
-    {id: 27,name: "Nike Runner 3 Athletic Sneakers",
+    { name: "Nike Runner 3 Athletic Sneakers",
     price: "22.57",
     image: sneakers_girls,
     category: "fashion"},
-    {id: 28,name: "Christmas Holiday Dress Girls",
-    price: "12.95",
+    { name: "Christmas Holiday Dress Girls",
+    price: "2.95",
     image: girls_dress,
     category: "fashion"},
-    {id: 29,name: "Cotton Checked Kat Dress sz 3-6mths",
+    { name: "Cotton Checked Kat Dress sz 3-6mths",
     price: "25.00",
     image: cotten_dress,
     category: "fashion"},
-    {id: 30,name: "Terry Jogger Sweatpants",
+    { name: "Terry Jogger Sweatpants",
     price: "22.99",
     image: sweatpants,
     category: "fashion"},
-    {id: 31,name: "ODLO Pullover Zip Medalia",
+    { name: "ODLO Pullover Zip Medalia",
     price: "44.99",
     image: pullover,
     category: "fashion"},
-    {id: 32,name: "Woman High Heels",
+    { name: "Woman High Heels",
     price: "39.55",
     image: highheels,
     category: "fashion"},
-    {id: 33,name: "Saint Laurent Mini Top Handle Bag",
+    { name: "Saint Laurent Mini Top Handle Bag",
     price: "250.66",
     image: handbag,
     category: "fashion"},
-    {id: 34,name: "Nike Headband",
+    { name: "Nike Headband",
     price: "25.37",
     image: headband,
     category: "fashion"},
-    {id: 35,name: " Designer Mens Jeans Trousers ",
+    { name: " Designer Mens Jeans Trousers ",
     price: "73.21",
     image: jean,
     category: "fashion"},
-    {id: 36,name: "Girls Sandals",
+    { name: "Girls Sandals",
     price: "22.59",
     image: sandal,
     category: "fashion"},
-    {id: 37,name: "Cutie Pie T-Shirt Women's Sexy Novelty",
+    { name: "Cutie Pie T-Shirt Women's Sexy Novelty",
     price: "14.99",
     image: shirtladies,
     category: "fashion"},
-    {id: 38,name: "Nike SB Dunk Low PRM QS Travis Scott",
+    { name: "Nike SB Dunk Low PRM QS Travis Scott",
     price: "1,395.00",
     image: Nike,
     category: "fashion"},
-    {id: 39,name: "Men's Under Armour 1/2 Zip Sleeve Shirt",
+    { name: "Men's Under Armour 1/2 Zip Sleeve Shirt",
     price: "28.89",
     image: longSleeve,
     category: "fashion"},
-    {id: 40,name: "San Diego Padres MLB",
+    { name: "San Diego Padres MLB",
     price: "69.99",
     image: hat,
     category: "fashion"},
-    {id: 41,name: "Toddler Hooded Sweatshirt",
+    { name: "Toddler Hooded Sweatshirt",
     price: "7.45",
     image: tolder,
     category: "fashion"},
-    {id: 42,name: "Vintage NBA NEW YORK KNICKS",
+    { name: "Vintage NBA NEW YORK KNICKS",
     price: "29.00",
     image: jersey,
     category: "fashion"},
-    {id: 43,
+    { 
         name: "Memory Foam Cooling Pillow",
         price: "32.49",
         image: pillow,
         category:'healthbeauty'
     },
-    {id: 44,
+    { 
         name: "Eno Lemon Powder",
         price: "17.99",
         image: powder,
         category:'healthbeauty'
     },
-    {id: 45,
+    { 
         name: "Owlet Dream Duo",
         price: "179.00",
         image: owlet,
         category:'healthbeauty'
     },
-    {id: 46,
+    { 
         name: "Playpen ball pool",
         price: "97.96",
         image: pool,
         category:'healthbeauty'
     },
-    {id: 47,
+    { 
         name: "Mysore Sandal Soap",
         price: "21.99",
         image: soap,
         category:'healthbeauty'
     },
-    {id: 48,
+    { 
         name: "MYOC PolySorbate 20 - 200ml",
         price: "26.64",
         image: myoc,
         category:'healthbeauty'
     },
-    {id: 49,
+    { 
         name: "Abercrombie & Fitch Fierce",
         price: "49,99",
         image: spray,
         category:'healthbeauty'
     },
-    {id: 50,
+    { 
         name: "Nivea Men 48 Hour Fresh Deodorant",
         price: "24.04",
         image: deodorant,
         category:'healthbeauty'
     },
-    {id: 51,
+    { 
         name: "Dana Love's Baby Soft Body Mist for Wome",
         price: "13.25",
         image: love,
         category:'healthbeauty'
     },
-    {id: 52,
+    { 
         name: "Glycolic Acid Chemical Face Peel Kit",
         price: "34.89",
         image: face,
         category:'healthbeauty'
     },
     
-    {id: 53,
+    { 
         name: "Work gloves all purpose",
         price: "2.99",
         image: work_glove,
         category: "industrial"
 },
-{id: 54,
+{ 
         name: "Hooded Coveralls",
         price: "369.69",
         image: coveralls,
         category: "industrial"
 },
-{id: 55,
+{ 
         name: "Blue Gaming Chair",
         price: "264.95",
         image: gaming_chair,
         category: "industrial"
 },
-{id: 56,
+{ 
         name: "Klarstein Ice cube machine 3 in 1",
         price: "514.09",
         image: cube,
         category: "industrial"
 },
-{id: 57,
+{ 
         name: "Sonostar Medical Ultrasound Scanner",
         price: "599.00",
         image: scanner,
         category: "industrial"
 },
-{id: 58,
+{ 
         name: "Toggle switch",
         price: "2.50",
         image: switchs,
         category: "industrial"
 },
-{id: 59,
+{ 
         name: "The Handy Petrol Compactor Plate",
         price: "513.30",
         image: handy,
         category: "industrial"
 },
-{id: 60,
+{ 
         name: "EPA TYPHON Terror X Mini Excavator",
         price: "12,100.00",
         image: excavator,
         category: "industrial"
 },
-{id: 61,name:"One High Performance Fuel Injector",
+{ name:"One High Performance Fuel Injector",
     price: "54.14",
     image: injector,
     category: "motors"},
-    {id: 62,name:"Ford F150 Pickup truck Hub Cap",
+    { name:"Ford F150 Pickup truck Hub Cap",
     price: "30.00",
     image: ford,
     category: "motors"},
-    {id: 63,name:"Universal Car Heated Seat Cover Cushion",
+    { name:"Universal Car Heated Seat Cover Cushion",
     price: "35.99",
     image: seat,
     category: "motors"},
-    {id: 64,name:"Gear Knob for Porsche 911 F",
+    { name:"Gear Knob for Porsche 911 F",
     price: "40.91",
     image: gear,
     category: "motors"},
-    {id: 65,name:"NEW NAPPA LEATHER STEERING",
+    { name:"NEW NAPPA LEATHER STEERING",
     price: "169.00",
     image: steer,
     category: "motors"},
-    {id: 66,name:"Cylinder & Keys for Bargman L-66 ",
+    { name:"Cylinder & Keys for Bargman L-66 ",
     price: "17.99",
     image: keys,
     category: "motors"},
     
-    {id: 67,
+    { 
     name: " Vansat BLUESTAR Satellite Dish System ",
     price: "2,999.00",
     image:  satellite,
     category: "motors"
     },
-    {id: 68,
+    { 
         name: "Outdoor Ultralight Camping Tent",
         price: "148.02",
         image: tent,
         category: "sports"
     },
-    {id: 69,
+    { 
         name: "Hiking Shoes",
         price: "44.04",
         image: hiking_sports,
         category: "sports"
     },
-    {id: 70,
+    { 
         name: "Storm Ridge Hat With LED Light",
         price: "8.01",
         image: led,
         category: "sports"
     },
-    {id: 71,
+    { 
         name: " Camping Climbing Trekking Pant",
         price: "50.93",
         image: camp_pant,
         category: "sports"
     },
-    {id: 72,
+    { 
         name: "Women's FJALLRAVEN Cargo Pants",
         price: "59.50",
         image: camp_woman,
         category: "sports"
     },
-    {id: 73,
+    { 
         name: "Racing Body Protector Jacket",
         price: "184.43",
         image: jacket,
         category: "sports"
     },
-    {id: 74,
+    { 
         name: "Dashing Black Open Face Helmet",
         price: "99.03",
         image: helmet,
         category: "sports"
     },
-    {id: 75,
+    { 
         name: "Vintage and Rare Pink Skateboard",
         price: "39.99",
         image: skateboard,
         category: "sports"
     },
-    {id: 76,
+    {name: 'Ampesi with stew',
+     price: '23.00',
+    image:  ampesi,
+category: 'foods' },
+{name: 'Plain Rice',
+     price: '22.00',
+    image: rice ,
+category: 'foods' },
+{name: 'Jollof Rice with chicken',
+     price: '23.00',
+    image:  jollof,
+category: 'foods' },
+{name: 'Waakye and Chicken',
+     price: '23.00',
+    image:  waakye,
+category: 'foods' },
+{name: 'Fried Rice and Chicken',
+     price: '21.00',
+    image:  friedrice,
+category: 'foods' },
+{name: 'Fufu with Goat soup',
+     price: '31.00',
+    image:  fufu,
+category: 'foods' },
+{name: 'Banku and okro stew',
+     price: '21.00',
+    image: banku ,
+category: 'foods' },
+{name: 'Jollof Rice – Kiddy Pack',
+     price: '21.00',
+    image:  jj,
+category: 'foods' }
+,{name: 'Hausa koko',
+     price: '8.00',
+    image:  koko,
+category: 'foods' },
+    { 
         name: "Sport A ice skating skates",
         price: "32.67",
         image: skates,
         category: "sports"
     },
-    {id: 77,
+    { 
         name: "Innstar Resistance Bands",
         price: "15.99",
         image: bands,
         category: "sports"
     },
-    {id: 78,
+    { 
         name: '(Universal) Corner Sofa Bed with Storage',
         price: '449.00',
         image: universal,
         category: "home"
 },
 
-{id: 79,
+{ 
         name: 'Seconique Butterfly Compact Dining Set',
         price: '207.31',
         image: set,
         category: "home"
 },
-{id: 80,
+{ 
         name: 'MEMORY FOAM REFRESHING MATTRESS',
         price: '159.99',
         image: form,
         category: "home"
 },
-{id: 81,
+{ 
         name: 'Upholstery corner / sofa / couch',
         price: '189',
         image: corner,
         category: "home"
 },
-{id: 82,
+{ 
         name: 'Kassatex Bath Hand Towel',
         price: '27.99',
         image: towel,
         category: "home"
 },
-{id: 83,
+{ 
         name: 'Peskoe Electric Heating Steamer',
         price: '131.40',
         image: electric,
         category: "home"
 },
-{id: 84,
+{ 
         name: 'Electric DIY Sweet Cotton Sugar Floss',
         price: '102.60',
         image: floss,
         category: "home"
 },
-{id: 85,
-        name: 'Prestige Electric Papad Pizza Maker',
+{        name: 'Prestige Electric Papad Pizza Maker',
         price: '65.17',
         image: maker,
         category: "home"
 },
-{id: 86,
+{ 
         name: 'Instant Pot Dou Nova Pressure Cooker',
         price: '123.99',
         image: cooker,
         category: "home"
 },
-   {id: 87,
+   { 
         name: 'Instant Ace Plus Multi Use Cooking & Beverage',
         price: '99.99',
         image: ace,

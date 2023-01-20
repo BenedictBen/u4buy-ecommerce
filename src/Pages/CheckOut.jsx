@@ -1,16 +1,34 @@
-import React,{useContext} from 'react';
+import React,{useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import Payment from "../Components/Checkout/Payment";
-import { ShopContext } from '../Components/Context/ShopContext';
+import { useSelector, useDispatch } from 'react-redux';
+import { cartTotalSelector } from "../Components/Redux/selectors";
+import { cartTotalPriceSelector } from "../Components/Redux/selectors";
+
+// import { ShopContext } from '../Components/Context/ShopContext';
 
 
 
 const CheckOut = () => {
     
+      const [change, setChange] = useState(false);
    
   
-const {  getTotalCartAmount } = useContext(ShopContext);
-    const totalAmount = getTotalCartAmount()
+const total = useSelector(cartTotalSelector);
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
+  const ui = useSelector((state) => state.ui);
+  const totalPrice = useSelector(cartTotalPriceSelector);
+
+  useEffect(() => {
+    if (total !== 0) {
+      setChange(true);
+
+      setTimeout(() => {
+        setChange(false);
+      }, 1000);
+    }
+  }, [total]);
    
 
   return (
@@ -67,7 +85,7 @@ const {  getTotalCartAmount } = useContext(ShopContext);
         </div>
         <div >
           <h1 className='font-bold text-2xl mb-2'>Summary</h1>
-          <p className='mb-2'>Total: ${totalAmount}</p>
+          <p className='mb-2'>Total: ${totalPrice}</p>
           <Link to="/thankyou">
           <button className='text-lg border-2 font-bold px-2 lg:text-2xl bg-black text-white py-2 rounded-lg'>Continue to pay</button>
           </Link>
