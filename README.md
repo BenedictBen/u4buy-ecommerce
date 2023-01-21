@@ -1,4 +1,4 @@
-#Demo link: https://benedictben.github.io/u4buy-ecommerce/
+#Demo link: https://u4buy.netlify.app
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
