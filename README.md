@@ -1,4 +1,4 @@
-#Demo link: https://u4buy.netlify.app
+#Demo link: https://u4buy2.netlify.app
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
